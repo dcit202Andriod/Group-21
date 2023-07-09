@@ -32,6 +32,9 @@
         <activity
             android:name="com.monstertechno.timely.NotesActivity" />
 
+        <activity
+            android:name="com.monstertechno.timely.TaskActivity" />
+
 
 
 

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button settings;
     ImageView nightModeImageView;
+    ImageView buttonOpenTaskActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,20 +27,23 @@ public class MainActivity extends AppCompatActivity {
 
         settings = findViewById(R.id.button2);
         nightModeImageView = findViewById(R.id.imageView);
-
-
+        buttonOpenTaskActivity = findViewById(R.id.buttonOpenTaskActivity);
 
         settings.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
         });
 
-
-
         nightModeImageView.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, FocusActivity.class);
             startActivity(intent);
         });
+
+        buttonOpenTaskActivity.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, TaskActivity.class);
+            startActivity(intent);
+        });
+
         LinearLayout notesLinearLayout = findViewById(R.id.notesButton);
         notesLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
