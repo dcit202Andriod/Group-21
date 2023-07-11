@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+
         LinearLayout notesLinearLayout = findViewById(R.id.notesButton);
         notesLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override

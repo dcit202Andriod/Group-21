@@ -1,8 +1,8 @@
 package com.monstertechno.timely;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,12 +13,19 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_main);
 
-        ImageView backButton = findViewById(R.id.back);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
+        View AboutUsActivity = findViewById(R.id.AboutUs);
+        AboutUsActivity.setOnClickListener(view -> {
+            Intent intent = new Intent(SettingsActivity.this, AboutUsActivity.class);
+            startActivity(intent);
         });
+        AboutUsActivity = findViewById(R.id.SendMessage);
+
+
+        AboutUsActivity.setOnClickListener(view -> {
+            Intent intent = new Intent(SettingsActivity.this, MessageActivity.class);
+            startActivity(intent);
+        });
+
+
     }
 }

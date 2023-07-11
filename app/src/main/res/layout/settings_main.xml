@@ -13,16 +13,6 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
 
-        <ImageView
-            android:id="@+id/back"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:padding="14dp"
-            android:src="@drawable/back_btn"
-            android:background="@color/blackish_background_color_50"
-
-            ></ImageView>
-
 
     <TextView
         android:layout_width="wrap_content"
@@ -95,6 +85,7 @@
                         ></TextView>
 
                     <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/darkModeSwitch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -108,47 +99,6 @@
 
                 </RelativeLayout>
                 <!--notification-->
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp">
-
-                    <ImageView
-                        android:id="@+id/notificationIcon"
-
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@color/blackish_background_color_50"
-                        android:padding="12dp"
-
-                        android:src="@drawable/notification_icon"></ImageView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="20dp"
-                        android:layout_toEndOf="@+id/notificationIcon"
-                        android:text="Notification"
-                        android:textColor="#ffff"
-                        android:textSize="16dp"
-                        android:textStyle="bold"
-
-
-                        ></TextView>
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-
-                        android:layout_centerInParent="true"
-                        android:switchMinWidth="50dp"
-                        android:theme="@style/notificationSwitch"></androidx.appcompat.widget.SwitchCompat>
-
-                    <!--notification-->
-
-                </RelativeLayout>
 
 
             </LinearLayout>
@@ -198,10 +148,12 @@
                         ></TextView>
 
                     <ImageView
+                        android:id="@+id/SendMessage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
+                        android:layout_marginEnd="0dp"
                         android:src="@drawable/forward_arrow"></ImageView>
 
 
@@ -241,6 +193,7 @@
                         ></TextView>
 
                     <ImageView
+                        android:id="@+id/AboutUs"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -253,50 +206,6 @@
 
                 </RelativeLayout>
                 <!--Layout3 sec3-->
-                <RelativeLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/FAQIcon"
-
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="#fa7e05"
-                        android:padding="12dp"
-
-                        android:src="@drawable/faq_icon"></ImageView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="20dp"
-                        android:layout_toEndOf="@+id/FAQIcon"
-                        android:text="FAQs"
-                        android:textColor="#ffff"
-                        android:textSize="16dp"
-                        android:textStyle="bold"
-
-
-                        ></TextView>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/forward_arrow"></ImageView>
-
-
-                    <!--notification-->
-
-
-                </RelativeLayout>
-
-
-
 
 
             </LinearLayout>

@@ -11,8 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ModernDashbord">
+    <receiver
+        android:name=".ReminderBroadcastReceiver"
+        android:enabled="true"
+        android:exported="true" />
 
-        <!-- Main Activity -->
+
+
+    <!-- Main Activity -->
         <activity
             android:name="com.monstertechno.timely.MainActivity"
             android:exported="true">
@@ -35,8 +41,11 @@
         <activity
             android:name="com.monstertechno.timely.TaskActivity" />
 
+        <activity
+            android:name="com.monstertechno.timely.AboutUsActivity" />
 
-
+        <activity
+            android:name="com.monstertechno.timely.MessageActivity" />
 
 
     </application>
