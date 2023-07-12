@@ -7,6 +7,7 @@ Raynolds4 - 10972269 - Developer - Contributed to the making of the To-Do list s
 Deku-10985219 - 10985219 - Member 
 OrianaReynolds - 10968750 - Member
 EliCherie - 10952953 - Member
+Owusu Richmond Appiah - 10974803 - Member
 
 
 ABOUT THE APP: TIMELY
