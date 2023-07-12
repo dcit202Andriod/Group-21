@@ -10,7 +10,7 @@ EliCherie - 10952953 - Member
 Owusu Richmond Appiah - 10974803 - Member
 
 
-ABOUT THE APP: TIMELY
+ABOUT THE APP: 
 Timely is a productivity app which comprises of a To-Do list, Notes and a  Focus Mode. This App is used to manage your time well, with the help of its high quality interface and activities.
 
 To-Do List function:
